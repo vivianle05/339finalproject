@@ -23,8 +23,12 @@
         </header>
     <main>
         <div class = "gallery">
-
-            <img src="owen_albums/BadBadNotGood-Talk-Memory.webp" width = "200" alt = "Bad Bad Not Good Talk Memory">  
+            <a href = "owen_albums/BadBadNotGood-Talk-Memory.webp" target="_blank" 
+            data-lightbox = "music"
+            data-title="Bad Bad Not Good Talk Memory"
+            data-alt="Bad Bad Not Good Talk Memory">
+                <img src="owen_albums/BadBadNotGood-Talk-Memory.webp" width = "200" alt = "Bad Bad Not Good Talk Memory">  
+            </a>
 
             <img src="owen_albums/deca-joins-Bathroom-cover-art.jpg" width = "200" alt = "Bathroom Deca Joins">            
             
@@ -51,5 +55,12 @@
  
         </div>
     </main> 
+    <script src="dist/js/lightbox-plus-jquery.js"> </script> 
+    <script>
+        lightbox.option({
+          'resizeDuration': 20,
+          'wrapAround': true,
+          'positionFromTop': 10
+        })
 </body>
 </html>
