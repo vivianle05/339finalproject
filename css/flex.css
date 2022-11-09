@@ -1,7 +1,40 @@
-a
-{
-background-color:#000000;
-height:45px;
-width:93px;
-padding:0px;
+html {background-image: linear-gradient(to right top, #dd1888, #ae2e84, #803477, #593361, #392c46, #362d49, #332d4b, #2f2e4e, #383c76, #3a4ba1, #345bcf, #146cff);
+    
+font-family: Arial, Helvetica, sans-serif;}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.logo{
+    color:darkviolet;
+    font-size: 28px;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    color: darkviolet;
+    transition: .3s;
+}
+
+button{
+    border: none;
+    background-color: #dd1888;
+    padding: 12px 30px;
+    border-radius: 30px;
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/lightbox.css" rel="stylesheet">
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Owen's Music Page</title>
@@ -12,26 +13,33 @@
     <a href="#main">Skip To Main Content</a>
     <header>
             <nav>
+                <h2 class="logo"> Music Radio</h2>
                 <ul>
-                    <li><a href = "main.html">Home</a></li>
-                    <li><a href = "about.html">About</a></li>
+                    <li><a href = "main.html">Home</a></li> 
                     <li><a href = "owen.html">Owen's Music Page</a></li>
-                    <li><a href = "vivian.html">Vivian's Music Page</a></li>
+                    <li><a href = "vivian.html">Vivian's Music Page</a></li> 
                 </ul>
+                <button><a href = "about.html"> About us</a></button>
             </nav>
             <h1>Owen's Music Page</h1>
         </header>
     <main>
         <div class = "gallery">
-            <a href = "owen_albums/BadBadNotGood-Talk-Memory.webp" target="_blank" 
+            <a href = "owen_albums/BadBadNotGood-Talk-Memory.webp" target="_self" 
             data-lightbox = "music"
             data-title="Bad Bad Not Good Talk Memory"
             data-alt="Bad Bad Not Good Talk Memory">
+            
                 <img src="owen_albums/BadBadNotGood-Talk-Memory.webp" width = "200" alt = "Bad Bad Not Good Talk Memory">  
             </a>
-
-            <img src="owen_albums/deca-joins-Bathroom-cover-art.jpg" width = "200" alt = "Bathroom Deca Joins">            
             
+            <a href = "owen_albums/deca-joins-Bathroom-cover-art.jpg" target="_self" 
+            data-lightbox = "music"
+            data-title="Bathroom Deca Joins"
+            data-alt="Bathroom Deca Joins">
+            <img src="owen_albums/deca-joins-Bathroom-cover-art.jpg" width = "200" alt = "Bathroom Deca Joins">            
+            </a>
+        
             <img src="owen_albums/JINJI KIKKO.jpg" width = "200" alt = "JINJI KIKKO Sunset Rollercoaster">           
             
             <img src="owen_albums/long way home aaron.jpg" width = "200" alt = "The Long Way home Aaron Tylor">           
@@ -55,7 +63,7 @@
  
         </div>
     </main> 
-    <script src="dist/js/lightbox-plus-jquery.js"> </script> 
+    <script src="js/lightbox-plus-jquery.js"> </script> 
     <script>
         lightbox.option({
           'resizeDuration': 20,
