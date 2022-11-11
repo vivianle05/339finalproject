@@ -25,8 +25,6 @@
       </header>
     
     <div class = "body_text">
-
-        <h2 id = "genre_gallery"></h2>
         <div class = "genre_gallery">
           <!-- Indie -->
             <div class = "genre">
@@ -106,5 +104,14 @@
             &copy; </p>
         </footer>
     </div>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script>
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+      max: 5,
+      speed: 400,
+      glare: true,
+      "max-glare":0.3,
+    });
+    </script>
   </body>
   </html>
