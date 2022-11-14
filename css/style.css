@@ -54,17 +54,16 @@ a{
     font-weight: bold;
 }
 
-a:hover {
+a:hover, a.button:hover {
     color: darkviolet;
     transition: .3s;
 }
 
-a:focus {
+a:focus, a.button:focus {
     color: darkviolet;
 }
 
-button, button:hover, button:focus {
-    border: none;
+a.button {
     background-color: #dd1888;
     padding: 12px 30px;
     border-radius: 30px;
