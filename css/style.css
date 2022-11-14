@@ -103,15 +103,51 @@ a.button {
     object-fit: cover;
 } */
 
-.gallery img {
-    width: 50%;
+/* .gallery img {
     margin: auto;
     border-radius: 20px;
     object-fit: cover;
     box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.5);
+} */
+
+.card_info {
+    transition: 0.5s ease;
 }
 
-.gallery img{
+.card_info:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+.card_info {
+    --c: rgb(201, 195, 111);     
+    --b: 8px;                     
+    --g: 0px;                     
+    padding: calc(var(--g) + var(--b));
+    --_g: #0000 0%,var(--c) 0;
+    background: 
+      conic-gradient(from 180deg at top var(--b) right var(--b),var(--_g))
+      var(--_i,200%) 0/200% var(--_i,var(--b))  no-repeat,
+      conic-gradient(at bottom var(--b) left var(--b),var(--_g))
+       0   var(--_i,200%)/var(--_i,var(--b)) 200%  no-repeat;
+    transition: .2s, background-position .2s .2s;
+    cursor: pointer;
+}
+
+.card_info:hover {
+    --_i: 100%;
+    transition: .2s, background-size .2s .2s;
+}
+
+.title img:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+/* .gallery img{
     transition: 0.5s ease;
 }
 
@@ -140,14 +176,7 @@ a.button {
 .gallery img:hover {
     --_i: 100%;
     transition: .2s, background-size .2s .2s;
-}
-
-.title img:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    transition: 0.5s ease;
-}
+} */
 
 /* nav li {
 display: inline-block;
@@ -168,7 +197,7 @@ text-decoration: underline;
 } */
 
 .card_info {
-    display: grid;
+    /* display: grid; */
     font-family: 'Open Sans';
     box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.5);
     background-color: rgb(255, 255, 255,0.1);
@@ -184,6 +213,11 @@ text-decoration: underline;
 
 .card_title {
     padding: 10px;
+    color: white;
+}
+
+.card_info img {
+    border-radius: 10px;
 }
 
 body > a {
@@ -209,13 +243,13 @@ nav a, #main {
     color: white;
 }
 
-h4,p{
-    font-family: 'Open Sans';
-    font-size: 14px;
-}
-
 h1,h2,h3{
     font-family: 'Black Ops One';
+}
+
+h3,p{
+    font-family: 'Open Sans';
+    font-size: 14px;
 }
 
 .genre_gallery{
