@@ -11,22 +11,23 @@
     <link rel="stylesheet" href="css/style.css">
     <title>About Us</title>
 </head>
-<body>
+<body id = "main">
     <a href="#main">Skip To Main Content</a>
     <header>
             <nav>
                 <h2 class="logo"> Music Radio</h2>
-                <ul>
-                    <li><a href = "main.html">Home</a></li> 
-                    <li><a href = "owen.html">Owen's Music Page</a></li>
-                    <li><a href = "vivian.html">Vivian's Music Page</a></li> 
+                <ul class = "links">
+                  <li><a class = "current" href = "main.html">Home</a></li> 
+                  <li><a class = "current" href = "owen.html">Owen's Music Page</a></li>
+                  <li><a class = "current" href = "vivian.html">Vivian's Music Page</a></li> 
                 </ul>
                 <a class = "button" href = "about.html">About Us</a>
             </nav>
-            <!-- <h1>About Us</h1> -->
+            <h1>About Us</h1>
     </header>
+    <main>
     <div class = "body_text">
-    <h2 id = "genre_gallery"></h2>
+    <div id = "genre_gallery"></div>
         <div class = "genre_gallery">
           <!-- Indie -->
             <div class = "genre">
@@ -34,9 +35,9 @@
                 <div class="image">
                   <div class="title">
                   <h2>Owen Xu</h2>
-                  <img src="owen_albums/Wave Deca Joins.jpg" width = "200" alt = "Wave Deca Joins"> 
+                  <img src="owen_albums/wave_decajoins.jpg" width = "200" alt = "waves abstract album cover"> 
                   </div>
-                  <h4>Wave by Deca Joins</h4>
+                  <h3>Wave by Deca Joins</h3>
                 </div>
               <p>Hello!</p>
               </div>
@@ -50,8 +51,17 @@
                   <h2>Vivian Le</h2>
                   <img src="vivian_albums/weatherreport.jpeg" width = "200" alt="weather report album cover"> 
                   </div>
-                  <h4>Weather Report by Slom</h4>
+                  <h3>Weather Report by Slom</h3>
                 </div>
                 <p>Hello! My name is Vivian and I am currently a junior at UMSI studying UX Design. I enjoy various genres of music including indie, pop, and K-R&B (Korean R&B). My favorite album from my music page is 'Weather Report' by Slom, which was recently released this past month. It is a colloboration albums with the many greats of K-R&B artists in South Korea such as Crush, Loco, and Zion.T. I would highly recommend this and Waves by Deca Joins from one of Owen's favorite albums, 'Go Slow'.</p>
               </div>
             </div>
+            <footer>
+              <p>SI 339 Final Project &copy;<br></p>
+            </footer>
+        </div>
+      </div>
+        <script src="js/final.js"></script>
+      </main>
+      </body>
+      </html>
