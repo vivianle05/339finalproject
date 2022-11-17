@@ -63,17 +63,18 @@ a {
 }
 
 a.btn:hover, a.btn.active:hover {
-    color: darkviolet;
+    color: rgb(255, 54, 168);
     transition: 0.3s;
 }
 
 a.btn:focus, a.btn.active:focus {
-    color: darkviolet;
+    color: rgb(255, 54, 168);
 }
 
 a.btn.active, a.btn.active:hover, a.btn.active:focus {
+    color: rgb(255, 54, 168);
     padding-bottom: 5px;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid rgb(253, 253, 253);
     font-family: 'Black Ops One';
 }
 
@@ -83,18 +84,18 @@ a.btn.active, a.btn.active:hover, a.btn.active:focus {
     top: -40px;
 } */
 
-a.button.active, a.button.active:hover, a.button.active:focus {
+/* a.button.active, a.button.active:hover, a.button.active:focus {
     padding-bottom: 10px;
     border-bottom: 0px;
-}
+} */
 
-a.button {
+/* a.button {
     background-color: #dd1888;
     padding: 12px 30px 12px;
     border-radius: 30px;
     color: white;
     font-family: 'Black Ops One';
-}
+} */
 
 .gallery {
     display: grid;
