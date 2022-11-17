@@ -1,10 +1,14 @@
-html {background-image: linear-gradient(to right top, #dd1888, #ae2e84, #803477, #593361, #392c46, #362d49, #332d4b, #2f2e4e, #383c76, #3a4ba1, #345bcf, #146cff);}
-
+html {
+    background-image: linear-gradient(to right top, #dd1888, #ae2e84, #803477, 
+    #593361, #392c46, #362d49, #332d4b, #2f2e4e, 
+    #383c76, #3a4ba1, #345bcf, #146cff);
+}
+    
 html {
     scroll-behavior: smooth;
 }
 
-body::before{
+body::before {
     content:'';
     position:fixed;
     top:0;
@@ -16,7 +20,7 @@ body::before{
     z-index: -1;
 }
 
-body::after{
+body::after {
     content:'';
     position:fixed;
     top:0;
@@ -28,7 +32,7 @@ body::after{
     z-index: -1;
 }
 
-nav{
+nav {
     display: flex;
     position: relative;
     align-items: center;
@@ -38,12 +42,12 @@ nav{
     padding-right: 5%;
 }
 
-.logo{
+.logo {
     color:darkviolet;
     font-size: 28px;
 }
 
-nav ul li{
+nav ul li {
     list-style-type: none;
     display: inline-block;
     padding: 10px 20px;
@@ -60,14 +64,14 @@ a {
 
 a.btn:hover, a.btn.active:hover {
     color: darkviolet;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 a.btn:focus, a.btn.active:focus {
     color: darkviolet;
 }
 
-a.btn.active, a.btn.active:hover {
+a.btn.active, a.btn.active:hover, a.btn.active:focus {
     padding-bottom: 5px;
     border-bottom: 3px solid white;
     font-family: 'Black Ops One';
@@ -79,9 +83,14 @@ a.btn.active, a.btn.active:hover {
     top: -40px;
 } */
 
+a.button.active, a.button.active:hover, a.button.active:focus {
+    padding-bottom: 10px;
+    border-bottom: 0px;
+}
+
 a.button {
     background-color: #dd1888;
-    padding: 12px 30px;
+    padding: 12px 30px 12px;
     border-radius: 30px;
     color: white;
     font-family: 'Black Ops One';
@@ -90,7 +99,7 @@ a.button {
 .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 70%;
+    width: 90%;
     padding: 20px;
     grid-gap: 30px;
     align-items: stretch;
@@ -127,7 +136,7 @@ a.button {
     text-decoration: none;
 }
 
-.card_info p, .card_info:hover, .card_title:hover{
+.card_info p, .card_info:hover, .card_title:hover {
     padding: 10px;
     color: white;
 }
@@ -142,12 +151,23 @@ a.button {
     width: 100%;
 }
 
-body > a {
+/* body > a {
     position: absolute;
     top: -30px;
+} */
+
+div.skip a {
+    position: absolute;
+    font-family: 'Black Ops One';
+    top: -40px;
 }
 
-body a:focus{
+div.skip a:hover, div.skip a:focus {
+    color: darkviolet;
+    text-decoration: underline;
+}
+
+body a:focus {
     top: 10px;
     transition: 0.5s;
 }
@@ -156,50 +176,47 @@ nav a, #main {
     font-family: 'Black Ops One';
 }  
 
-.body_text{
-    /* padding: 5%; */
+.body_text {
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 5%;
     color: white;
 }
 
-h1,h2,h3{
+h1, h2, h3 {
     font-family: 'Black Ops One';
     text-align: center;
 }
 
-h3,p{
+h3, p {
     font-family: 'Open Sans';
     font-size: 14px;
 }
 
 .card h3 {
     text-align: center;
-    font-size: larger;
     font-weight: bold;
 }
 
-.genre_gallery{
+.genre_gallery {
     display: flex;
     flex-direction: column;
     z-index: 1;
 }
 
-.genre_gallery img{
+.genre_gallery img {
     border-radius: 500px;
     border: solid 12px black;
     margin-top: 50px
 }
 
-.card{
+.card {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
     background-color: rgb(255, 255, 255,0.1);
-    /* padding: 90px 60px 100px 60px; */
-    padding: 90px 60px 60px 60px;
+    padding: 90px 60px 80px 60px;
     border-radius: 30px;
     margin-top: 60px;
     margin-bottom: 60px;
@@ -213,21 +230,22 @@ h3,p{
     scroll-snap-type: y mandatory;
     scroll-snap-align: center;
 }
-.image h2{
+
+.image h2 {
     position: absolute;
     top: -60px;
     right: 30px;
     font-size: 6em;
     color:rgba(0, 0, 0, 0.2);
 }
-.image h4{
+
+.image h4 {
     margin-block: 0px;
     justify-content: center;
     padding-top: 16px;
-
 }
 
-.card p{
+.card p {
     padding-left: 30px;
 }
 
@@ -243,7 +261,7 @@ h3,p{
     /* GRID STYLING */
     .gallery {
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         width: 90%;
     }
 
