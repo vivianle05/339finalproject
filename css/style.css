@@ -246,8 +246,12 @@ h3, p {
     padding-top: 16px;
 }
 
+div.image {
+    display: contents;
+}
+
 .card p {
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 .current:hover, .current:focus {
@@ -285,6 +289,10 @@ h3, p {
         margin: 0;
         flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    .card p {
+        padding-left: 40px;
     }
 
     /* GRID STYILNG */
