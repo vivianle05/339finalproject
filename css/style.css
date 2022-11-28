@@ -163,6 +163,7 @@ div.skip a {
     position: absolute;
     font-family: 'Black Ops One';
     top: -40px;
+    margin-left: 10px;
 }
 
 div.skip a:hover, div.skip a:focus {
