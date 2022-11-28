@@ -115,7 +115,6 @@ a.btn.active, a.btn.active:hover, a.btn.active:focus {
     width: 100%;
     margin: auto;
     border-radius: 20px;
-    object-fit: cover;
 }
 
 .card_info {
@@ -139,14 +138,15 @@ a.btn.active, a.btn.active:hover, a.btn.active:focus {
     text-decoration: none;
 }
 
-.card_info p, .card_info:hover, .card_title:hover {
+/* .card_info p, .card_info:hover, .card_title:hover {
     padding: 10px;
     color: white;
-}
+} */
 
 .card_title {
     padding: 10px;
     color: white;
+    line-height: 1.2;
 }
 
 .card_info img {
@@ -282,6 +282,21 @@ div.image {
     border-radius: 20px;
     padding: 12px 10px 10px 10px;
     box-shadow: black;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+
+    .card_info {
+        transition: none;
+    }
+    
+    .card_info:hover, .card_title:hover {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        transition: unset;
+    }
+
 }
 
 @media screen and (min-width: 650px){
