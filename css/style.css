@@ -6,6 +6,8 @@ html {
     
 html {
     scroll-behavior: smooth;
+    line-height: 1.2;
+    margin: inherit;
 }
 
 body::before {
@@ -191,6 +193,13 @@ h1, h2, h3 {
 
 h1 {
     color: white;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 h3, p {
@@ -201,9 +210,11 @@ h3, p {
 .card h3 {
     text-align: center;
     font-weight: bold;
-    padding: 10px;
     margin: auto;
     width: 200px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    line-height: 1.2;
 }
 
 .genre_gallery {
@@ -215,7 +226,7 @@ h3, p {
 .genre_gallery img {
     border-radius: 500px;
     border: solid 12px black;
-    margin-top: 50px
+    margin-top: 50px;
 }
 
 .card {
@@ -245,6 +256,8 @@ h3, p {
     right: 30px;
     font-size: 6em;
     color:rgba(0, 0, 0, 0.2);
+    margin-top: 90px;
+    margin-right: 10px;
 }
 
 .image h4 {
@@ -259,6 +272,7 @@ div.image {
 
 .card p {
     padding-left: 20px;
+    line-height: 1.2;
 }
 
 .current:hover, .current:focus {
