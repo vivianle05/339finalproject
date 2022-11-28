@@ -45,8 +45,9 @@ nav {
 }
 
 .logo {
-    color:darkviolet;
+    color:#a119db;
     font-size: 28px;
+    stroke: black;
 }
 
 nav ul li {
@@ -286,6 +287,7 @@ div.image {
 
 @media screen and (prefers-reduced-motion: reduce) {
 
+    /* GRID REDUCED MOTION */
     .card_info {
         transition: none;
     }
