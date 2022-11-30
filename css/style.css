@@ -45,8 +45,9 @@ nav {
 }
 
 .logo {
-    color:darkviolet;
+    color:#a119db;
     font-size: 28px;
+    stroke: black;
 }
 
 nav ul li {
@@ -138,11 +139,6 @@ a.btn.active, a.btn.active:hover, a.btn.active:focus {
     text-decoration: none;
 }
 
-/* .card_info p, .card_info:hover, .card_title:hover {
-    padding: 10px;
-    color: white;
-} */
-
 .card_title {
     padding: 10px;
     color: white;
@@ -153,11 +149,6 @@ a.btn.active, a.btn.active:hover, a.btn.active:focus {
     border-radius: 10px;
     width: 100%;
 }
-
-/* body > a {
-    position: absolute;
-    top: -30px;
-} */
 
 div.skip a {
     position: absolute;
@@ -283,13 +274,6 @@ div.image {
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-
-    .card{
-        -webkit-transform: none;
-        -ms-transform: none;
-        transform: none;
-        transition: unset;
-    }
 
     .card_info {
         transition: none;
