@@ -247,8 +247,6 @@ h3, p {
     border-top: 1px solid rgba(255, 255, 255,0.5);
     border-left: 1px solid rgba(255, 255, 255,0.5);
     backdrop-filter: blur(5px);
-    scroll-snap-type: y mandatory;
-    scroll-snap-align: center;
 }
 
 .image h2 {
@@ -286,6 +284,13 @@ div.image {
 
 @media screen and (prefers-reduced-motion: reduce) {
 
+    .card{
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        transition: unset;
+    }
+
     .card_info {
         transition: none;
     }
@@ -309,13 +314,23 @@ div.image {
         display: block;
     }
     .card {
-        flex-direction: column;
+        /* flex-direction: column; */
         flex-wrap: nowrap;
     }
 }
 
 @media screen and (min-width: 800px) {
     /* GRID STYLING */
+    .stupid_flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stupid_flex .card{
+        flex-direction: row; 
+    }
+
+
     .gallery {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -325,6 +340,18 @@ div.image {
 
 @media screen and (min-width: 1000px) {
     /* FLEX STYLING */
+    .stupid_flex{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .stupid_flex .card{
+        flex-direction: column; 
+    }
+
+    .stupid_flex .card p{
+        padding: 0px;
+    }
     .genre_gallery {
         padding: 0;
         margin: 0;
