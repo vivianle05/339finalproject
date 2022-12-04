@@ -112,6 +112,10 @@ a.btn.active, a.btn.active:hover, a.btn.active:focus {
     margin: auto;
 }
 
+#player {
+    grid-column: 1 / span 2;
+}
+
 .gallery img {
     width: 100%;
     margin: auto;
@@ -320,20 +324,24 @@ div.image {
         grid-template-columns: repeat(3, 1fr);
         width: 90%;
     }
+
+    #player {
+        grid-column: 1 / span 3;
+    }
 }
 
 @media screen and (min-width: 1000px) {
     /* FLEX STYLING */
-    .stupid_flex{
+    .stupid_flex {
         display: flex;
         flex-direction: row;
     }
 
-    .stupid_flex .card{
+    .stupid_flex .card {
         flex-direction: column; 
     }
 
-    .stupid_flex .card p{
+    .stupid_flex .card p {
         padding: 0px;
     }
     .genre_gallery {
@@ -431,7 +439,7 @@ div.image {
         grid-row: 5 / span 2;
     }
 
-    #player{
+    #player {
         grid-column: 1 / span 8;
     }
 }
