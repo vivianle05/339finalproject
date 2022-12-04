@@ -430,4 +430,8 @@ div.image {
         grid-column: 5 / span 4;
         grid-row: 5 / span 2;
     }
+
+    #player{
+        grid-column: 1 / span 8;
+    }
 }
