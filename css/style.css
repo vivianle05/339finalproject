@@ -65,6 +65,10 @@ a {
     font-weight: bold;
 }
 
+.btn {
+    color: white;
+}
+
 a.btn:hover, a.btn.active:hover {
     color: rgb(255, 54, 168);
     transition: 0.3s;
@@ -292,15 +296,17 @@ div.image {
 
 }
 
-@media screen and (min-width: 650px){
+@media screen and (min-width: 700px){
     /* FLEX STYLING */
     .genre_gallery {
         padding: 0;
         margin: 0;
     }
+
     div.image {
         display: block;
     }
+
     .card {
         /* flex-direction: column; */
         flex-wrap: nowrap;
@@ -309,15 +315,14 @@ div.image {
 
 @media screen and (min-width: 800px) {
     /* GRID STYLING */
-    .stupid_flex{
+    .stupid_flex {
         display: flex;
         flex-direction: column;
     }
 
-    .stupid_flex .card{
+    .stupid_flex .card {
         flex-direction: row; 
     }
-
 
     .gallery {
         display: grid;
@@ -344,6 +349,7 @@ div.image {
     .stupid_flex .card p {
         padding: 0px;
     }
+
     .genre_gallery {
         padding: 0;
         margin: 0;
