@@ -65,10 +65,6 @@ a {
     font-weight: bold;
 }
 
-.btn {
-    color: white;
-}
-
 a.btn:hover, a.btn.active:hover {
     color: rgb(255, 54, 168);
     transition: 0.3s;
