@@ -44,10 +44,15 @@ nav {
     padding-right: 5%;
 }
 
-.logo {
+h1.logo a {
     color:#a119db;
     font-size: 28px;
     stroke: black;
+}
+
+h1.logo a:hover, h1.logo a:focus {
+    color: rgb(231, 230, 230);
+    transition: 0.3s;
 }
 
 nav ul li {
